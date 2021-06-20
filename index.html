@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+  <link rel="stylesheet" href="index.css" />
   <title>Movie List</title>
 </head>
 
@@ -20,10 +21,10 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Favorite</a>
+          <a class="nav-link" href="favorite.html">Favorite</a>
         </li>
       </ul>
     </div>
@@ -38,6 +39,10 @@
           Search
         </button>
       </form>
+      <div class="icon" id="mode">
+        <i class="fa fa-th now-mode" id="card-mode" aria-hidden="true"></i>
+        <i class="fa fa-bars" id="list-mode" aria-hidden="true"></i>
+      </div>
     </div>
     <div class="row" id="data-panel">
       <!-- Render Movie List -->
@@ -82,6 +87,7 @@
         </div>
       </div>
     </div>
+    <script src="https://kit.fontawesome.com/af9756c3c7.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="./index.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
